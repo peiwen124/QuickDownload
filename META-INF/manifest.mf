@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+
+Name: icon128.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: h5mJcSLatZcm33Sb9XBsgQ==
+SHA1-Digest: xXXdjaLrtPtxTyuXD2o16Qtsdhw=
+
+Name: icon16.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: VZpivrTK06Mu5/HA2iqytA==
+SHA1-Digest: HZcv9uGeBW23PUBW6qnK6qKRLF8=
+
+Name: icon48.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 0I/DPa3Tb79Dsxc7yNwekA==
+SHA1-Digest: aaxludt0wgDIE+iDs7j7GqqQAnU=
+
+Name: manifest.json
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: UEEFQYyGpeTwT1fCfdPGxg==
+SHA1-Digest: t2HloRc/JGNiM4A4tWjtBmSXYVU=
+
+Name: save.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 2mmhAYnyuK+raQraP6IE6A==
+SHA1-Digest: DkiGKkIs1hAVjm+I7BrPnkzOWbU=
+
+Name: save_image_to_downloads.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: VfDyeSviKBgqFXS338kFMA==
+SHA1-Digest: XIZRUYZMuebJRK8Lg7n6v2G7zWk=
+

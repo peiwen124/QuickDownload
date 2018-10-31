@@ -1,8 +1,11 @@
 function downloadImage(info, tab) {
 	var url = info['srcUrl'];
 	var filename = url.substring(url.lastIndexOf('/')+1);
+	
+	//try to change location of file
+	var foldername = "imagsedsf/"
 	if(chrome.downloads){
-		chrome.downloads.download({ url: url, filename: filename });
+		chrome.downloads.download({ url: url, filename: foldername + filename });
 	}
 	else{
 		function getBase64ImageData(url,filename) {
@@ -20,19 +23,19 @@ function downloadImage(info, tab) {
 					var tab=tabs[0];
 					chrome.tabs.sendMessage(tab.id, {'action' : 'imagedownload',url:url,filename:filename,dataURI:dataURI},
 						function (response) {
-							if (chrome.runtime.lastError) { 
-								//console.log(chrome.runtime.lastError.message); 
-							} else { 
+							if (chrome.runtime.lastError) {
+								//console.log(chrome.runtime.lastError.message);
+							} else {
 								//OK
 							}
 						}
-					);						
+					);
 				} );
-				
+
 			};
 			img.src = url;
 		}
-		getBase64ImageData(url,filename);		
+		getBase64ImageData(url,filename);
 	}
 }
 chrome.contextMenus.create({"title": "Save Image to Downloads…", "contexts":["image"], "onclick": downloadImage});

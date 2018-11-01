@@ -1,9 +1,11 @@
 function downloadImage(info, tab) {
 	var url = info['srcUrl'];
 	var filename = url.substring(url.lastIndexOf('/')+1);
-	
+
 	//try to change location of file
-	var foldername = "imagsedsf/"
+	//get folder name from .html file
+	var foldername = document.getElementById('folder-name').value;
+
 	if(chrome.downloads){
 		chrome.downloads.download({ url: url, filename: foldername + filename });
 	}

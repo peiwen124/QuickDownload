@@ -1,0 +1,79 @@
+/* Remove margins and padding from the list */
+body{
+  background-color: #E0E9E9;
+}
+
+p{
+  margin-left: 10px;
+  margin-bottom: 0px;
+  font-size: 15px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  width:96%;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px ;
+  list-style-type: none;
+  background: #455372;
+  font-size: 15px;
+  font-weight:bold;
+  transition: 0.2s;
+  color:white;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #2D3956;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #e7e7e7;
+  color:black;
+}
+
+/* Style the input */
+input {
+  margin: 0px auto 5px;
+  border: 1;
+  border-radius: 0;
+  width: 96%;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  background-color: white;
+}
+
+#folder-name{
+  border:none;
+  background-color: #f04b4c;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btn {
+    background-color: #3d6098;
+    color:white;
+    border: none;
+    padding: 8px 15px 8px 15px;
+    width:31.5%;
+    margin-bottom:5px;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+.btn-group .btn:hover {
+    background-color: #ffffff;
+    font-weight: bold;
+    color:black;
+}
+

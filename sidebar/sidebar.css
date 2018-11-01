@@ -59,6 +59,7 @@ input {
   font-weight: bold;
 }
 
+/* ADD button */
 .btn {
     background-color: #3d6098;
     color:white;
@@ -77,3 +78,21 @@ input {
     color:black;
 }
 
+#set{
+  padding: 8px 40px 8px 40px;
+  width:96%;
+  text-align: center;
+}
+
+#clear{
+  padding: 8px 40px 8px 40px;
+  width:96%;
+  text-align: center;
+  background-color: #ffdad3;
+  color:black;
+}
+#clear:hover{
+  background-color: #ffffff;
+  font-weight: bold;
+  color:black;
+}

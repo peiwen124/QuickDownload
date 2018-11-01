@@ -31,6 +31,10 @@ window.onload = function() {
       refreshArray();
       document.getElementById("folder-name").value = inputText.value + "/";
       };
+    document.getElementById("clear").onclick = function() {
+      refreshArray();
+      document.getElementById("folder-name").value = "";
+      };
 
 }
 

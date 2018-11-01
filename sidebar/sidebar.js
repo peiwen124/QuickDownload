@@ -7,6 +7,7 @@ window.onload = function() {
       liNode.appendChild(textNode);
       listNode.appendChild(liNode);
 
+      refreshArray();
 
       liNode.onclick = function(){
        index = tab.indexOf(liNode.innerHTML);
@@ -17,15 +18,19 @@ window.onload = function() {
     };
     document.getElementById("edit").onclick = function() {
       items[index].innerHTML = inputText.value;
-
+      refreshArray();
     };
     document.getElementById("delete").onclick = function() {
-
+      refreshArray();
       if(items.length > 0){
           items[index].parentNode.removeChild(items[index]);
           inputText.value = "";
       };
     };
+    document.getElementById("set").onclick = function() {
+      refreshArray();
+      document.getElementById("folder-name").value = inputText.value + "/";
+      };
 
 }
 
@@ -52,4 +57,13 @@ var inputText = document.getElementById("txt"),
 
  }
 
-
+ function refreshArray()
+ {
+     // clear array
+     tab.length = 0;
+     items = document.querySelectorAll("#folderlist li");
+     // fill array
+     for(var i = 0; i < items.length; i++){
+      tab.push(items[i].innerHTML);
+    }
+ }

@@ -15,7 +15,10 @@ window.onload = function() {
        inputText.value = liNode.innerHTML;
       };
     };
+    document.getElementById("edit").onclick = function() {
+      items[index].innerHTML = inputText.value;
 
+    };
     document.getElementById("delete").onclick = function() {
 
       if(items.length > 0){
@@ -48,4 +51,5 @@ var inputText = document.getElementById("txt"),
      };
 
  }
+
 

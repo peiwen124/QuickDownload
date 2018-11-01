@@ -8,12 +8,18 @@
 		"16": "icon16.png",
 		"48": "icon48.png"
 	},
+
+	"sidebar_action": {
+	"default_title": "Download File Selector",
+	"default_panel": "sidebar/sidebar.html"
+	},
+
     "content_scripts": [{
 		"js": [ "save.js" ],
 		"matches": [ "http://*/*", "https://*/*" ],
 		"run_at": "document_start",
 		"all_frames": true
-    }],	
+    }],
 	"manifest_version": 2,
 	"name": "Save Image to Downloads",
 	"permissions": [ "activeTab", "downloads", "contextMenus", "tabs", "http://*/*", "https://*/*", "cookies", "storage", "management"],
@@ -22,5 +28,5 @@
 		"gecko": {
 			"id": "save_to_downloads@save_to_downloads.org"
 		}
-	}   
+	}
 }
